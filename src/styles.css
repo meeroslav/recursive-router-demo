@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  --font-family: 'Open Sans', sans-serif;
+  --font-family-heading: 'Caveat', cursive;
+
+  font-family: var(--font-family);
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-family-heading);
+}
