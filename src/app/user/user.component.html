@@ -3,10 +3,10 @@
   <img class="avatar" [src]="user.avatar_url" [alt]="user.login"/>
   <section>{{ user.login }}</section>
   <router>
-    <route path=":username/**">
+    <route path="/:username">
       <app-user *routeComponent></app-user>
     </route>
-    <route path="">
+    <route path="/">
       <app-followers *routeComponent></app-followers>
     </route>
   </router>
