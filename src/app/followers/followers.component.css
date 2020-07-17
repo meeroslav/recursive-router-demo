@@ -1,0 +1,8 @@
+.followers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.followers a {
+  padding: .7rem;
+}

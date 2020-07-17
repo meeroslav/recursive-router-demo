@@ -1,0 +1,7 @@
+<h2>Followers</h2>
+<div class="followers">
+  <a *ngFor="let follower of followers$ | async; trackBy: trackBy" [linkTo]="follower.login">
+    <img class="avatar_small" [src]="follower.avatar_url" [alt]="follower.login"/>
+    <section>{{ follower.login }}</section>
+  </a>
+</div>

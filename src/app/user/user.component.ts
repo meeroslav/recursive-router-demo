@@ -12,7 +12,6 @@ import { switchMap } from 'rxjs/operators';
 })
 export class UserComponent implements OnInit {
   user$: Observable<FullUser>;
-  followers$: Observable<User[]>;
 
   constructor(private readonly service: GithubService, private routeParams$: RouteParams<{ username: string }>) { }
 
@@ -20,12 +19,5 @@ export class UserComponent implements OnInit {
     this.user$ = this.routeParams$.pipe(
       switchMap(({ username }) => this.service.getUser(username))
     );
-    this.followers$ = this.routeParams$.pipe(
-      switchMap(({ username }) => this.service.getFollowers(username))
-    );
-  }
-
-  trackBy(index: number, item: User): number {
-    return item.id;
   }
 }

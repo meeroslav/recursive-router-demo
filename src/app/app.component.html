@@ -1,7 +1,7 @@
 <h1>Recursive router demo</h1>
 
 <router>
-  <route path="/:username">
+  <route path="/:username/**">
     <app-user *routeComponent></app-user>
   </route>
   <route path="/" redirectTo="/meeroslav"></route>

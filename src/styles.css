@@ -10,3 +10,15 @@ html {
 h1, h2, h3, h4 {
   font-family: var(--font-family-heading);
 }
+
+.avatar {
+  max-width: 10rem;
+}
+
+.avatar_small {
+  width: 4rem;
+}
+
+h2, h3, h4 {
+  margin: 0;
+}

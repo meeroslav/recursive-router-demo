@@ -1,20 +1,2 @@
-.avatar {
-  max-width: 10rem;
-}
 
-.avatar_small {
-  width: 4rem;
-}
 
-h2 {
-  margin: 0;
-}
-
-.followers {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.followers a {
-  padding: .7rem;
-}
