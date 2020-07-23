@@ -2,6 +2,7 @@
 html {
   --font-family: 'Open Sans', sans-serif;
   --font-family-heading: 'Caveat', cursive;
+  --accent-color: #43849f;
 
   font-family: var(--font-family);
   text-align: center;
@@ -9,6 +10,7 @@ html {
 
 h1, h2, h3, h4 {
   font-family: var(--font-family-heading);
+  color: var(--accent-color);
 }
 
 .avatar {
@@ -21,4 +23,14 @@ h1, h2, h3, h4 {
 
 h2, h3, h4 {
   margin: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
 }

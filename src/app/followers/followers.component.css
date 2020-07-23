@@ -6,3 +6,15 @@
 .followers a {
   padding: .7rem;
 }
+
+h2 {
+  border-radius: 1rem;
+  background: var(--accent-color);
+  color: white;
+  margin: 0 1rem;
+}
+
+:host {
+  display: block;
+  padding-top: 2rem;
+}
