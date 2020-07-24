@@ -1,10 +1,12 @@
 .followers {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .followers a {
   padding: .7rem;
+  min-width: 10rem;
 }
 
 h2 {
@@ -17,4 +19,8 @@ h2 {
 :host {
   display: block;
   padding-top: 2rem;
+}
+
+img {
+  border-radius: 1rem;
 }
