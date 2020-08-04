@@ -10,10 +10,13 @@
 }
 
 h2 {
-  border-radius: 1rem;
+  margin: 0 1rem;
+}
+
+p.message {
   background: var(--accent-color);
   color: white;
-  margin: 0 1rem;
+  border-radius: .5rem;
 }
 
 :host {

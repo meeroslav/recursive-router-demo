@@ -1,4 +1,5 @@
 <h2>Followers (first 30)</h2>
+<p class="message">Click on one of the followers to see "how deep the rabbit hole goes". Observe how route changes.</p>
 <div class="followers">
   <a *ngFor="let follower of followers$ | async; trackBy: trackBy" [linkTo]="follower.login">
     <img class="avatar_small" [src]="follower.avatar_url" [alt]="follower.login"/>
