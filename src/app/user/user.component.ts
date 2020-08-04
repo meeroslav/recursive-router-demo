@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FullUser } from '../model/user';
 import { GithubService } from '../service/github.service';
-import { RouteParams } from 'angular-routing';
+import { RouteParams, RoutePath } from 'angular-routing';
 import { switchMap, tap } from 'rxjs/operators';
 
 @Component({
@@ -15,7 +15,8 @@ export class UserComponent implements OnInit {
 
   constructor(
     private readonly service: GithubService,
-    private readonly routeParams$: RouteParams<any>
+    private readonly routeParams$: RouteParams<any>,
+    public readonly path$: RoutePath
   ) { }
 
   ngOnInit(): void {
