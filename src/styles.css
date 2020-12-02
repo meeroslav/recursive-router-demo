@@ -1,15 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 html {
-  --font-family: 'Open Sans', sans-serif;
-  --font-family-heading: 'Caveat', cursive;
   --accent-color: #43849f;
-
-  font-family: var(--font-family);
+  font-family: sans-serif;
   text-align: center;
 }
 
-h1, h2, h3, h4 {
-  font-family: var(--font-family-heading);
+h1,
+h2,
+h3,
+h4 {
   color: var(--accent-color);
 }
 
@@ -21,12 +20,15 @@ h1, h2, h3, h4 {
   width: 4rem;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   margin: 0;
 }
 
 h1 {
   font-size: 3rem;
+  margin: 1rem;
 }
 h2 {
   font-size: 2rem;

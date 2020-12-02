@@ -13,12 +13,6 @@ h2 {
   margin: 0 1rem;
 }
 
-p.message {
-  background: var(--accent-color);
-  color: white;
-  border-radius: .5rem;
-}
-
 :host {
   display: block;
   padding-top: 2rem;
