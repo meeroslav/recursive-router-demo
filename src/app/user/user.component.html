@@ -1,8 +1,10 @@
 <ng-container *ngIf="user$ | async as user">
   <div class="profile">
-    <h3>{{ user.name }}</h3>
-    <img class="avatar" [src]="user.avatar_url" [alt]="user.login"/>
-    <a [linkTo]="path$ | async">{{ user.login }}</a>
+    <a [linkTo]="path$ | async">
+      <h3>{{ user.name }}</h3>
+      <img class="avatar" [src]="user.avatar_url" [alt]="user.login"/>
+      {{ user.login }}
+    </a>
   </div>
   <router>
     <route path="/:username" [exact]="false">

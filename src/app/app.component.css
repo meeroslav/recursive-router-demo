@@ -1,7 +1,113 @@
-ul.message {
-  background: var(--accent-color);
-  color: white;
-  border-radius: 0.5rem;
-  padding: 1rem;
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-h);
+  display: flex;
+  align-items: center;
+  background-color: var(--cl-primary);
+  color: var(--cl-inverted);
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 var(--gutter);
+}
+
+.toolbar h1 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--cl-inverted);
+}
+
+main {
+  margin-top: var(--header-h);
+  text-align: center;
+}
+
+.banner {
+  padding: var(--spacer);
+  background: var(--cl-primary-dark);
+  color: var(--cl-inverted);
   text-align: left;
+}
+
+.banner ul {
+  margin: 0;
+}
+
+.banner a {
+  color: var(--cl-inverted);
+  font-weight: var(--font-weight-fat);
+  text-decoration: underline;
+}
+
+footer {
+  border-top: 2px solid var(--cl-primary);
+  margin: var(--gutter) auto;
+  padding: var(--gutter);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  flex-wrap: wrap;
+}
+
+footer .signature {
+  flex: 1 0 100%;
+  text-align: center;
+  margin-top: var(--gutter);
+}
+
+@media only screen and (max-width: 767px) {
+  footer span {
+    flex: 1 0 100%;
+    text-align: center;
+    margin-bottom: var(--spacer);
+  }
+}
+
+.github-star-badge {
+  color: #24292e;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 3px 10px;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 3px;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+  margin-left: 4px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.github-star-badge:hover {
+  background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+  border-color: rgba(27, 31, 35, 0.35);
+  background-position: -0.5em;
+}
+
+.github-star-badge .material-icons {
+  height: 16px;
+  width: 16px;
+  margin-right: 4px;
+}
+
+svg#routeImage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+
+  fill: var(--cl-back-image);
+}
+
+@media screen and (max-width: 575px) {
+  svg#routeImage {
+    display: none;
+    visibility: hidden;
+  }
 }
