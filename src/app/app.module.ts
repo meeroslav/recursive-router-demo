@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { RoutingModule } from 'angular-routing';
+import { ComponentRouterModule } from '@angular-component/router';
 import { HttpClientModule } from '@angular/common/http';
 import { GithubService } from './service/github.service';
 import { UserComponent } from './user/user.component';
@@ -16,7 +16,7 @@ import { FollowersComponent } from './followers/followers.component';
   ],
   imports: [
     BrowserModule,
-    RoutingModule.forRoot(),
+    ComponentRouterModule.forRoot(),
     HttpClientModule
   ],
   providers: [GithubService],

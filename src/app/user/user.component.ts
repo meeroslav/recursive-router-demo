@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { FullUser } from '../model/user';
 import { GithubService } from '../service/github.service';
-import { RouteParams, RoutePath } from 'angular-routing';
+import { RouteParams, RoutePath } from '@angular-component/router';
 import { switchMap, tap } from 'rxjs/operators';
 
 @Component({
